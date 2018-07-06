@@ -1,29 +1,21 @@
-.head_img {
+.head {
+    display: block;
+    z-index: 999;
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    position: sticky;
+    top: 0;
     height: 100px;
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
 }
 
-.head_img img {
-    width: inherit;
-    /*height: inherit;*/
-}
-
-.head_menu {
-    border: 1px solid black;
-    margin: 10px;
-}
-
-.head_menu ul {
+.head ul {
     /*border: 2px solid green;*/
-    position: fixed;
+    display: flex;
     width: 75%;
     margin-left: 25%;
-
 }
 
-.head_menu li {
+.head li {
     border: 2px solid black;
     border-radius: 20px;
     background-color: aqua;
@@ -32,27 +24,25 @@
     display: inline;
     font-size: 30px;
     font-family: Garamond;
-    color: #ff061a;
     padding: 2px;
-
 }
 
-.head_menu a {
+.head a {
     text-decoration: none;
     color: #800000;
 }
 
-.head_menu a:visited {
+.hea_menu a:visited {
     text-decoration: none;
-    color: #800000;
+    color: #ff061a;
 }
 
-.head_menu a:active {
+.head a:active {
     text-decoration: none;
     color: green;
 }
 
-.head_menu a:hover {
+.head a:hover {
     text-decoration: none;
     color: yellow;
 }
@@ -60,26 +50,42 @@
 .about_my {
     border: 1px solid black;
     margin: 10px;
-    margin-top: 100px;
+    display: block;
+    position: relative;
 }
 
 .about_company {
     border: 1px solid black;
     margin: 10px;
+    display: block;
+    position: relative;
 }
 
 .production {
     border: 1px solid black;
     margin: 10px;
+    display: block;
+    position: static;
 }
 
 .partner_programm {
     border: 1px solid black;
     margin: 10px;
+    display: block;
+    position: relative;
 }
 
 .contact {
     border: 1px solid black;
     margin: 10px;
+    display: block;
+    position: relative;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+    z-index: -1;
+}

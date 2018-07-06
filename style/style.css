@@ -1,0 +1,85 @@
+.head_img {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.head_img img {
+    width: inherit;
+    /*height: inherit;*/
+}
+
+.head_menu {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.head_menu ul {
+    /*border: 2px solid green;*/
+    position: fixed;
+    width: 75%;
+    margin-left: 25%;
+
+}
+
+.head_menu li {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: aqua;
+    width: auto;
+    height: 30px;
+    display: inline;
+    font-size: 30px;
+    font-family: Garamond;
+    color: #ff061a;
+    padding: 2px;
+
+}
+
+.head_menu a {
+    text-decoration: none;
+    color: #800000;
+}
+
+.head_menu a:visited {
+    text-decoration: none;
+    color: #800000;
+}
+
+.head_menu a:active {
+    text-decoration: none;
+    color: green;
+}
+
+.head_menu a:hover {
+    text-decoration: none;
+    color: yellow;
+}
+
+.about_my {
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.about_company {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.production {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.partner_programm {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.contact {
+    border: 1px solid black;
+    margin: 10px;
+}
+

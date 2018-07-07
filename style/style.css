@@ -54,10 +54,23 @@
     height: 300px;
 }
 
-.about_my img {
-    height: 300px;
+.photo {
     float: left;
     margin-right: 20px;
+    width: auto;
+    height: 300px;
+}
+
+.photo img {
+    /*visibility: hidden;*/
+    size: inherit;
+    height: 300px;
+}
+
+.photo:hover {
+    border: 2px solid black;
+    padding: 1px;
+    cursor: pointer;
 }
 
 .about_company_items {
@@ -112,4 +125,32 @@ a.anchor {
     background-color: rgba(200, 50,50, 0.5);
 }
 
-#comp
+.modalContainer {
+    position: fixed;
+    background-color: rgba(100, 100, 100, 0.3);
+    z-index: 1100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+}
+
+.modalWindow {
+    border: 2px solid red;
+    width: 50%;
+    height: auto;
+    position: fixed;
+    left: 25%;
+    /*visibility: hidden;*/
+    z-index: 2000;
+
+    background-size: cover;
+    overflow: hidden;
+}
+
+.modalWindow img {
+    width: 100%;
+    height: auto;
+    z-index: 2000;
+}
+

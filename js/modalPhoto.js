@@ -10,8 +10,10 @@ document.querySelectorAll('.photo').forEach(function (el) {
         modalImg.setAttribute('src', imgUrl);
         var container = document.querySelector('.modalContainer');
         container.style.display = "block";
-
-        document.querySelector('.modalPhoto').onclick = function (ele) {
+        var ModalWindowHeight = modal.offsetHeight;
+        var emptyHeight = (window.innerHeight - ModalWindowHeight) / 2;
+        modal.style.top = emptyHeight + "px";
+        document.querySelector('.modalPhoto').onclick = function () {
             var photoOnWindowUrl = this.getAttribute('src');
             console.log(photoOnWindowUrl);
             var allPhoto = document.querySelectorAll('.photo');
@@ -22,10 +24,16 @@ document.querySelectorAll('.photo').forEach(function (el) {
                 if ((currentPhotoUrl === photoOnWindowUrl) && nextI < allPhoto.length) {
                     imgUrl = allPhoto[i + 1].getAttribute('src');
                     modalImg.setAttribute('src', imgUrl);
+                    var ModalWindowHeight = modal.offsetHeight;
+                    var emptyHeight = (window.innerHeight - ModalWindowHeight) / 2;
+                    modal.style.top = emptyHeight + "px";
                 }
                 if ((currentPhotoUrl === photoOnWindowUrl) && (nextI >= allPhoto.length)) {
                     imgUrl = allPhoto[0].getAttribute('src');
                     modalImg.setAttribute('src', imgUrl);
+                    var ModalWindowHeight = modal.offsetHeight;
+                    var emptyHeight = (window.innerHeight - ModalWindowHeight) / 2;
+                    modal.style.top = emptyHeight + "px";
                 }
             }
         };
@@ -37,13 +45,3 @@ document.querySelector('.modalContainer').onclick = function (e) {
         e.target.style.display = "none";
     }
 };
-
-console.log(window.innerHeight);
-var ModalWindow = document.querySelector('.modalWindow');
-var ModalWindowHeight = ModalWindow.offsetHeight;
-console.log(ModalWindowHeight);
-var emptyHeight = (window.innerHeight - ModalWindowHeight)/2;
-console.log(emptyHeight);
-ModalWindow.style.top = emptyHeight+"px";
-
-

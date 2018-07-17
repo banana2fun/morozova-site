@@ -1,104 +1,3 @@
-.head {
-    display: block;
-    z-index: 999;
-    background-image: url(../img/1.png);
-    background-size: 100%;
-    position: sticky;
-    top: 0;
-    height: 100px;
-}
-
-.head ul {
-    /*border: 2px solid green;*/
-    display: flex;
-    float: right;
-}
-
-.head li {
-    border: 2px solid black;
-    border-radius: 20px;
-    background-color: aqua;
-    width: auto;
-    height: 30px;
-    display: inline;
-    font-size: 1.5em;
-    font-family: Garamond;
-    padding: 2px;
-}
-
-.head a {
-    text-decoration: none;
-    color: #800000;
-}
-
-.hea_menu a:visited {
-    text-decoration: none;
-    color: #ff061a;
-}
-
-.head a:active {
-    text-decoration: none;
-    color: green;
-}
-
-.head a:hover {
-    text-decoration: none;
-    color: yellow;
-}
-
-.about_my {
-    /*border: 1px solid black;*/
-    margin: 10px;
-    display: block;
-    position: relative;
-    height: 300px;
-}
-
-.photo {
-    float: left;
-    margin-right: 20px;
-    width: auto;
-    height: 300px;
-}
-
-.photo img {
-    /*visibility: hidden;*/
-    size: inherit;
-    height: 300px;
-}
-
-.photo:hover {
-    border: 2px solid black;
-    padding: 1px;
-    cursor: pointer;
-}
-
-.about_company_items {
-    float: left;
-    width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.about_company {
-    border: 1px solid black;
-    margin: 10px;
-    position: relative;
-    display: block;
-    text-align: center;
-}
-
-.production {
-    border: 1px solid black;
-    margin: 10px;
-    display: block;
-    position: static;
-}
-
 .partner_programm {
     border: 1px solid black;
     margin: 10px;
@@ -153,6 +52,111 @@ a.anchor {
     z-index: 2000;
 }
 
-.modalPhoto {
+
+
+/*-----------------------------------*/
+body {
+    background-color: #5cd3ff;
+}
+
+.navbar {
+    display: block;
+    z-index: 10000;
+    background-image: url(../img/1.png);
+    background-size: 100%;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    text-align: right;
 
 }
+
+.navbar-collapse .nav-item .nav-link {
+    color: white;
+    font-size: 20px;
+
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+.nav-item {
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 3px;
+    width: auto;
+    text-align: center;
+
+}
+
+.about_my {
+    margin: 10px;
+    background-color: #b8daff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.item-responsive {
+    position: relative; /* относительное позиционирование */
+}
+.item-responsive:before {
+    display: block; /* отображать элемент как блок */
+    content: ""; /* содержимое псевдоэлемента */
+    width: 100%; /* ширина элемента */
+}
+.item-2by1 {
+    padding-top: 100%; /* (9:16)*100% */
+}
+.item-responsive>.content {
+    position: absolute; /* абсолютное положение элемент */
+    /* положение элемента */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover !important;
+}
+
+.about_company {
+    /*border: 1px solid black;*/
+    margin: 10px;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.list-group {
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.list-group .list-group-item {
+    margin: 5px;
+    border: solid;
+    border-radius: 20px;
+}
+
+.production {
+    margin: 10px;
+    background-color: #b8daff;
+    border-radius: 20px;
+    /*padding: 10px;*/
+    /*position: relative;*/
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.productList {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.modal-header {
+    display: block;
+}
+
+
+

@@ -5,67 +5,247 @@
     <title>Морозова-NL</title>
     <meta name="keywords" content="Морозова, NL, менеджер">
     <meta name="description" content="Личный сайт менеджера NL - Морозовой И.В.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link href="style/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="siteBody">
-    <div class="head">
-        <ul>
-            <li><a href="#my">Обо мне</a></li>
-            <li><a href="#comp">О комании</a></li>
-            <li><a href="#prod">Продукция</a></li>
-            <li><a href="#part">Партнёрская программа</a></li>
-            <li><a href="#contact">Контакты</a></li>
-        </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#my">Обо мне<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#comp">О комании</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prod">Продукция</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#part">Партнёрская программа</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="main">
         <a class="anchor" id="my"></a>
         <div class="about_my">
-            <span><img class="photo" src="img/2.jpg"></span>
-            <span><img class="photo" src="img/3.jpg"></span>
-            <span><img class="photo" src="img/1.png"></span>
-            <div class="my_bio">
-                <h2>Обо мне</h2>
-                <p class="my">Всем привет меня зовут Морозова Ирина и на этом сайте я расскажу вам о замечательной
-                    комании NL-Int менежджером которой я являюсь=)</p>
+            <div class="row">
+                <div class="col-xs-none col-sm-none col-md-3 col-lg-3 d-none d-md-block">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"
+                         style="max-width: 600px; margin: 0 auto;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="item-responsive item-2by1">
+                                    <div class="content"
+                                         style="background: url(img/2.jpg);"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="item-responsive item-2by1">
+                                    <div class="content"
+                                         style="background: url(img/3.jpg);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                    <div class="my_bio">
+                        <div>
+                            <h2>Обо мне</h2>
+                            <p>Всем привет меня зовут Морозова Ирина и на этом сайте я расскажу вам о
+                                замечательной комании NL-Int менежджером которой я являюсь=)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="anchor" id="comp"></a>
         <div class="about_company">
-            <h2>Компания NL это -</h2>
-            <div class="row">
-                <div class="about_company_items">
-                    <h3>1. Надежность</h3>
-                    <p class="company">Более 10 лет на рынке</p>
+            <ul class="list-group list-group-item-primary">
+                <h2>Компания NL это -</h2>
+                <div class="row align-items-center">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <li class="list-group-item list-group-item-secondary">
+                            <h3>1. Надежность</h3>
+                            <p class="company">Более 10 лет на рынке</p>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">
+                            <h3>2. Доход</h3>
+                            <p class="company">Возможность зарабытвать</p>
+                        </li>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <li class="list-group-item list-group-item-secondary">
+                            <h3>3. Проверенность</h3>
+                            <p class="company">1570041 довольных клиентов во всём мире</p>
+                        </li>
+                        <li class="list-group-item list-group-item-secondary">
+                            <h3>4. Жизнь</h3>
+                            <p class="company">Улучшение вашего качества жизни</p>
+                        </li>
+                    </div>
                 </div>
-                <div class="about_company_items">
-                    <h3>3. Проверенность</h3>
-                    <p class="company">1570041 довольных клиентов во всём мире</p>
-                </div>
-                <div class="about_company_items">
-                    <h3>2. Доход</h3>
-                    <p class="company">Возможность зарабытвать</p>
-                </div>
-                <div class="about_company_items">
-                    <h3>4. Жизнь</h3>
-                    <p class="company">Улучшение вашего качества жизни</p>
-                </div>
-            </div>
+
+            </ul>
         </div>
         <a class="anchor" id="prod"></a>
         <div class="production">
             <h2>Продукция NL</h2>
-            <div class="health_production">
-                Фото 3
-                <h3><a href="#">Товары для здоровья</a></h3>
-            </div>
-            <div class="sport_production">
-                Фото 4
-                <h3><a href="#">Товары для спорта</a></h3>
-            </div>
-            <div class="home_production">
-                Фото 5
-                <h3><a href="#">Товары для дома</a></h3>
+            <div class="row productList justify-content-center">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/product_for_helth.jpg" alt="product_for_helth">
+                        <div class="card-body health_production">
+                            <h3 class="card-title">Товары для <br>здоровья</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#healthModal"> Каталог товаров для здоровья
+                            </button>
+                            <div class="modal fade modal_production" id="healthModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLongTitle">Товары для здоровья</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row justify-content-center">
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Первый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Второй
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Третий
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Четвёртый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Пятый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Шестой
+                                                        товар</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/product_for_sport.jpg" alt="product_for_sport">
+                        <div class="card-body health_production">
+                            <h3 class="card-title">Товары для <br>спорта</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#sportModal"> Каталог товаров для спорта
+                            </button>
+                            <div class="modal fade modal_production" id="sportModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLongTitle">Товары для спорта</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row justify-content-center">
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Первый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Второй
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Третий
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Четвёртый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Пятый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Шестой
+                                                        товар</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="img/product_for_home.png" alt="/product_for_home">
+                        <div class="card-body health_production">
+                            <h3 class="card-title">Товары для <br>дома</h3>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#homeModal"> Каталог товаров для дома
+                            </button>
+                            <div class="modal fade modal_production" id="homeModal" tabindex="-1" role="dialog"
+                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="exampleModalLongTitle">Товары для дома</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row justify-content-center">
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Первый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Второй
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Третий
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Четвёртый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Пятый
+                                                        товар</h5></div>
+                                                    <div class="product-card"><img class="product-img"
+                                                                                   src="img/helth_1.jpg"><h5>Шестой
+                                                        товар</h5></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="anchor" id="part"></a>
@@ -108,4 +288,13 @@
 </div>
 <script src="js/backgroundSwitcher.js"></script>
 <script src="js/modalPhoto.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
 </body>

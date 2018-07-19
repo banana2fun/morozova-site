@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
           integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link href="style/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <div class="siteBody">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,34 +72,31 @@
             </div>
         </div>
         <a class="anchor" id="comp"></a>
-        <div class="about_company">
-            <ul class="list-group list-group-item-primary">
-                <h2>Компания NL это -</h2>
-                <div class="row align-items-center">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <li class="list-group-item list-group-item-secondary">
-                            <h3>1. Надежность</h3>
-                            <p class="company">Более 10 лет на рынке</p>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary">
-                            <h3>2. Доход</h3>
-                            <p class="company">Возможность зарабытвать</p>
-                        </li>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <li class="list-group-item list-group-item-secondary">
-                            <h3>3. Проверенность</h3>
-                            <p class="company">1570041 довольных клиентов во всём мире</p>
-                        </li>
-                        <li class="list-group-item list-group-item-secondary">
-                            <h3>4. Жизнь</h3>
-                            <p class="company">Улучшение вашего качества жизни</p>
-                        </li>
-                    </div>
+        <ul class="list-group list-group-item-primary">
+            <h2>Компания NL это -</h2>
+            <div class="row align-items-center">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <li class="list-group-item list-group-item-secondary">
+                        <h3>1. Надежность</h3>
+                        <p class="company">Более 10 лет на рынке</p>
+                    </li>
+                    <li class="list-group-item list-group-item-secondary">
+                        <h3>2. Доход</h3>
+                        <p class="company">Возможность зарабытвать</p>
+                    </li>
                 </div>
-
-            </ul>
-        </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <li class="list-group-item list-group-item-secondary">
+                        <h3>3. Проверенность</h3>
+                        <p class="company">1570041 довольных клиентов во всём мире</p>
+                    </li>
+                    <li class="list-group-item list-group-item-secondary">
+                        <h3>4. Жизнь</h3>
+                        <p class="company">Улучшение вашего качества жизни</p>
+                    </li>
+                </div>
+            </div>
+        </ul>
         <a class="anchor" id="prod"></a>
         <div class="production">
             <h2>Продукция NL</h2>
@@ -114,11 +113,11 @@
                                     data-target="#healthModal"> Каталог товаров для здоровья
                             </button>
                             <div class="modal fade modal_production" id="healthModal" tabindex="-1" role="dialog"
-                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                 aria-labelledby="healthModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 class="modal-title" id="exampleModalLongTitle">Товары для здоровья</h3>
+                                            <h3 class="modal-title" id="healthModalLongTitle">Товары для здоровья</h3>
                                         </div>
                                         <div class="modal-body">
                                             <div class="container-fluid">
@@ -162,11 +161,11 @@
                                     data-target="#sportModal"> Каталог товаров для спорта
                             </button>
                             <div class="modal fade modal_production" id="sportModal" tabindex="-1" role="dialog"
-                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                 aria-labelledby="sportModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 class="modal-title" id="exampleModalLongTitle">Товары для спорта</h3>
+                                            <h3 class="modal-title" id="sportModalLongTitle">Товары для спорта</h3>
                                         </div>
                                         <div class="modal-body">
                                             <div class="container-fluid">
@@ -210,11 +209,11 @@
                                     data-target="#homeModal"> Каталог товаров для дома
                             </button>
                             <div class="modal fade modal_production" id="homeModal" tabindex="-1" role="dialog"
-                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                 aria-labelledby="homeModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 class="modal-title" id="exampleModalLongTitle">Товары для дома</h3>
+                                            <h3 class="modal-title" id="homeModalLongTitle">Товары для дома</h3>
                                         </div>
                                         <div class="modal-body">
                                             <div class="container-fluid">

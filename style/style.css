@@ -20,10 +20,6 @@ a.anchor {
     z-index: -1;
 }
 
-.active {
-    background-color: rgba(200, 50,50, 0.5);
-}
-
 .modalContainer {
     position: fixed;
     background-color: rgba(100, 100, 100, 0.3);
@@ -120,17 +116,13 @@ body {
     background-size: cover !important;
 }
 
-.about_company {
-    /*border: 1px solid black;*/
+.list-group {
+    border-radius: 20px;
+    padding: 5px;
     margin: 10px;
     position: relative;
     display: block;
     text-align: center;
-}
-
-.list-group {
-    border-radius: 20px;
-    padding: 5px;
 }
 
 .list-group .list-group-item {
@@ -158,5 +150,7 @@ body {
     display: block;
 }
 
-
+.active {
+    background-color: rgba(200, 50,50, 0.5) !important;
+}
 

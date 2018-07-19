@@ -1,6 +1,5 @@
 document.querySelectorAll('.photo').forEach(function (el) {
     el.onclick = function () {
-        // console.log(this);
         var imgUrl = this.getAttribute('src');
         var modal = document.querySelector('.modalWindow');
         var modalImg = document.createElement('img');
@@ -45,3 +44,19 @@ document.querySelector('.modalContainer').onclick = function (e) {
         e.target.style.display = "none";
     }
 };
+
+// $(document).ready(function () {
+//     $('.photo').click(function () {
+//         var imgUrl = $(this).attr('src');
+//         var modalImg = $(document).append('<img>');
+//         $(modalImg).addClass('modalPhoto');
+//         $('.modalWindow').html('');
+//         $('.modalWindow').append(modalImg);
+//         $(modalImg).attr('src', imgUrl);
+//         $('.modalContainer').css('display', 'block');
+//         var ModalWindowHeight = $('.modalWindow').outerHeight();
+//
+//
+//
+//     });
+// });

@@ -9,7 +9,7 @@ a.anchor {
 .modalContainer {
     position: fixed;
     background-color: rgba(100, 100, 100, 0.3);
-    z-index: 1100;
+    z-index: 1500;
     top: 0;
     left: 0;
     right: 0;
@@ -43,7 +43,7 @@ body {
 
 .navbar {
     display: block;
-    z-index: 10000;
+    z-index: 1000;
     background-image: url(../img/1.png);
     background-size: 100%;
     position: sticky;

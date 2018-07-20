@@ -1,62 +1,30 @@
-document.querySelectorAll('.photo').forEach(function (el) {
-    el.onclick = function () {
-        var imgUrl = this.getAttribute('src');
-        var modal = document.querySelector('.modalWindow');
-        var modalImg = document.createElement('img');
-        modalImg.classList.add('modalPhoto');
-        modal.innerHTML = '';
-        modal.appendChild(modalImg);
-        modalImg.setAttribute('src', imgUrl);
-        var container = document.querySelector('.modalContainer');
-        container.style.display = "block";
-        var ModalWindowHeight = modal.offsetHeight;
-        var emptyHeight = (window.innerHeight - ModalWindowHeight) / 2;
-        modal.style.top = emptyHeight + "px";
-        document.querySelector('.modalPhoto').onclick = function () {
-            var photoOnWindowUrl = this.getAttribute('src');
-            console.log(photoOnWindowUrl);
-            var allPhoto = document.querySelectorAll('.photo');
-            console.log(allPhoto);
-            for (var i = 0; i < allPhoto.length; i++) {
-                var currentPhotoUrl = allPhoto[i].getAttribute('src');
-                var nextI = i + 1;
-                if ((currentPhotoUrl === photoOnWindowUrl) && nextI < allPhoto.length) {
-                    imgUrl = allPhoto[i + 1].getAttribute('src');
-                    modalImg.setAttribute('src', imgUrl);
-                    var ModalWindowHeight = modal.offsetHeight;
-                    var emptyHeight = (window.innerHeight - ModalWindowHeight) / 2;
-                    modal.style.top = emptyHeight + "px";
+$(document).ready(function () {
+    $('.photo').click(function () {
+        $imgUrl = $(this).css('background-image').replace('url(', '').replace(')', '').replace(/\"/gi, "");
+        $('.modalWindow').html('');
+        $('.modalWindow').append('<img class="modalPhoto">');
+        $('.modalPhoto').attr('src', $imgUrl);
+        $('.modalContainer').css('display', 'block');
+        $('.modalWindow').css('top', ($(window).height() - $('.modalWindow').outerHeight()) / 2 + 'px');
+        $('.modalPhoto').click(function () {
+            $photoOnWindowUrl = $(this).attr('src');
+            $photoList = $(document).find('.photo');
+            for ($i = 0; $i < $photoList.length; $i++) {
+                $currentPhotoUrl = $($photoList[$i]).css('background-image').replace('url(', '').replace(')', '').replace(/\"/gi, "");
+                if (($currentPhotoUrl === $photoOnWindowUrl) && $i + 1 < $photoList.length) {
+                    $imgUrl = $($photoList[$i + 1]).css('background-image').replace('url(', '').replace(')', '').replace(/\"/gi, "");
                 }
-                if ((currentPhotoUrl === photoOnWindowUrl) && (nextI >= allPhoto.length)) {
-                    imgUrl = allPhoto[0].getAttribute('src');
-                    modalImg.setAttribute('src', imgUrl);
-                    var ModalWindowHeight = modal.offsetHeight;
-                    var emptyHeight = (window.innerHeight - ModalWindowHeight) / 2;
-                    modal.style.top = emptyHeight + "px";
+                if (($currentPhotoUrl === $photoOnWindowUrl) && $i + 1 >= $photoList.length) {
+                    $imgUrl = $($photoList[0]).css('background-image').replace('url(', '').replace(')', '').replace(/\"/gi, "");
                 }
+                $('.modalPhoto').attr('src', $imgUrl);
+                $('.modalWindow').css('top', ($(window).height() - $('.modalWindow').outerHeight()) / 2 + 'px');
             }
-        };
-    }
+        });
+        $(document).click(function (e) {
+            if ($(".modalContainer").is(e.target)) {
+                $(".modalContainer").hide();
+            }
+        })
+    });
 });
-
-document.querySelector('.modalContainer').onclick = function (e) {
-    if (e.target.classList.contains('modalContainer')) {
-        e.target.style.display = "none";
-    }
-};
-
-// $(document).ready(function () {
-//     $('.photo').click(function () {
-//         var imgUrl = $(this).attr('src');
-//         var modalImg = $(document).append('<img>');
-//         $(modalImg).addClass('modalPhoto');
-//         $('.modalWindow').html('');
-//         $('.modalWindow').append(modalImg);
-//         $(modalImg).attr('src', imgUrl);
-//         $('.modalContainer').css('display', 'block');
-//         var ModalWindowHeight = $('.modalWindow').outerHeight();
-//
-//
-//
-//     });
-// });

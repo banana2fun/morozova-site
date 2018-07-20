@@ -250,13 +250,37 @@
         <a class="anchor" id="part"></a>
         <div class="partner_programm">
             <h2>Партнёрская программа</h2>
-            <div class="partner_client">
-                <h3>Клиент</h3>
-                <p class="partner">Информация об клиентской программе</p>
-            </div>
-            <div class="partner_maneger">
-                <h3>Менеджер</h3>
-                <p class="partner">Информация о программе менеджера</p>
+            <div id="accordion">
+                <div class="card cardPartner bg-primary">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">
+                                Клиентская программа
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Информация о клиентской программе
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardPartner bg-primary">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                Программа менеджера
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Информация о программе менеджера
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="anchor" id="contact"></a>
@@ -265,35 +289,41 @@
                 <h3>Контакты</h3>
                 <p class="contac">Вас заинтересовал какой-либо товар? Или вы хотите стать участником партнёрской
                     программы? Закажите звонок и я с вами обязательно свяжусь!</p>
-                <form action="" method="post">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <br>
-                    <input type="text" name="phone" placeholder="Ваш телефон">
-                    <input type="submit" value="Заказать звонок">
+                <div class="d-flex justify-content-center">
+                <form class="form-inline" action="" method="post">
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" id="InputName" aria-describedby="nameHelp"
+                               placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                        <input type="text" class="form-control" id="InputPhone" placeholder="Ваш телефон">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Заказать</button>
                 </form>
+                </div>
             </div>
             <div class="contact_social">
                 <p class="contac">Или пишите мне в социальных сетях</p>
-                <h4><span class="inst">inst</span> instagramm</h4>
-                <h4><span class="vk">vk</span> vk</h4>
-                <h4><span class="mail">mail</span> email</h4>
-                <h4><span class="phone">phone</span> phone</h4>
+                <h5><a class="socialHref" href="https://vk.com/id17010107"><img src="img/instagram.png" alt="instagram" class="round social">instagram</a></h5>
+                <h5><a class="socialHref" href="https://vk.com/id17010107"><img src="img/vk.png" alt="vk" class="socialImg">vk</a></h5>
+                <h5><a class="socialHref" href="https://vk.com/id17010107"><img src="img/mail.png" alt="email" class="socialImg">email</a></h5>
+                <h5><a class="socialHref" href="https://vk.com/id17010107"><img src="img/phone.png" alt="phone" class="socialImg">phone</a></h5>
             </div>
         </div>
+
     </div>
-</div>
-<div class="modalContainer" style="display: none;">
-    <div class="modalWindow"></div>
-</div>
-<script src="js/backgroundSwitcher.js"></script>
-<script src="js/modalPhoto.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
+    <div class="modalContainer" style="display: none;">
+        <div class="modalWindow"></div>
+    </div>
+    <script src="js/backgroundSwitcher.js"></script>
+    <script src="js/modalPhoto.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
 </body>

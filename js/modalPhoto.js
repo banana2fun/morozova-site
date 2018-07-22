@@ -21,7 +21,7 @@ $(document).ready(function () {
                 $('.modalWindow').css('top', ($(window).height() - $('.modalWindow').outerHeight()) / 2 + 'px');
             }
         });
-        $(document).click(function (e) {
+        $(document).bind("mouseup touchend", function (e) {
             if ($(".modalContainer").is(e.target)) {
                 $(".modalContainer").css('display', 'none');;
             }

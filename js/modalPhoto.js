@@ -23,7 +23,7 @@ $(document).ready(function () {
         });
         $(document).click(function (e) {
             if ($(".modalContainer").is(e.target)) {
-                $(".modalContainer").hide();
+                $(".modalContainer").css('display', 'none');;
             }
         })
     });
